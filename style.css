@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+ 
+* {
+    padding: 0;
+    margin:  0;
+    box-sizing:border-box;
+
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+ul {
+    list-style: none; 
+}
+a {
+    text-decoration: none;
+}
+/*utility clasess */
+.primary-text {
+    color: red;
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px ;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary {
+    color: aliceblue;
+    border: 1px solid white;
+}
+.btn-primary:hover {
+    background: green;
+}
+/* header start */
+header {
+    height: 100vh;
+    background: url('PROJECT IMGS/ba.gr4.jpg')center center/cover no-repeat;
+    position: relative ;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#navbar img {
+    width: 80px;
+    height: 80px;
+    margin-left: 100px;
+
+
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 100px;
+}
+#navbar ul li a {
+    padding: 15px 20px;
+    color: aliceblue;
+    font-weight: 700;
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid green;
+ }
+ header .content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+header .content h1 {
+    font-size: 40px;
+    color: white;
+}
+header .content p {
+    margin: 20px 0 40px;
+    color: green;
+    font-size: 30px;
+    font-weight: 600;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 , 0, 0 ,0.6);
+}
+header * {
+   z-index : 10;
+}
+
+/* header end */
